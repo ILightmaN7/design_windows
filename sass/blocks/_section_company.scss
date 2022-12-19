@@ -1,0 +1,190 @@
+
+// профессионадбный подход к остекленению
+
+.main-background {
+	background-image:url(../images/background_company.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.company-block {
+	display: flex;
+	margin-left: 90px;
+	
+
+	@media screen and (max-width:992px) {
+		margin-left: 10px;
+	}
+}
+
+.leftblock {
+	width: 50%;
+	
+	@media screen and (max-width:992px) {
+		display: flex;
+		justify-content: space-between;
+		width: 80%;
+	}
+}
+
+.company {
+	margin-top: 130px;
+	margin-bottom: 130px;
+	width: 100%;
+
+	&__title {
+		font-size: 24px;
+		font-weight: 600;
+		color: #EF7F04;
+	}
+
+	&__description {
+		font-size: 36px;
+		margin-top: 7px;
+		color: #FFFFFF;
+		font-weight: 100;
+		line-height: 42.19px;
+	}
+}
+
+.companylogo {
+	display: flex;
+	margin-top: 28px;
+
+	@media screen and (max-width:992px) {
+		max-width: 100%;
+	}
+
+	&__1 {
+		margin-right: 90px;
+	}
+
+	&__2 {
+		margin-right: 115px;
+	}
+}
+
+.logo-description {
+	display: flex;
+	margin-top: 23px;
+	font-size: 14px;
+	line-height: 18px;
+
+	&__p {
+		width: 160px;
+		margin-right: 20px;
+		color: #FFFFFF;
+	}
+}
+
+.rightblock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	@media screen and (max-width:992px) {
+		display: none;
+	}
+}
+
+.form {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FFFFFF;
+	max-width: 406px;
+	height: 428px;
+	border-radius: 10px;
+	
+
+	&__title {
+		font-size: 18px;
+		color:#2F2F51;
+		font-weight: 600;
+		margin-top: 43px;
+	}
+
+	
+
+	&__button {
+	font-size: 14px;
+	width: 199px;
+	height: 55px;
+	border-radius: 3px;
+	margin-top: 15px;
+	background-color: #EF7F04;
+	color: #FFFFFF;
+	font-weight: 600;
+	}
+
+	&__img {
+		position: absolute;
+		bottom: -5%;
+		left: -1%;
+	}
+}
+
+.form__input {
+	width: 322px;
+	margin-top: 20px;
+	padding:10px 0 10px 10px;
+	border: none;
+	border-radius: 3px;
+	background: #E2E2E2;
+
+	&::placeholder {
+		font-size: 14px;
+		font-weight: 400;
+		color: #424268;
+	}
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+.pseudocheckbox {
+	min-width: 25px;
+	min-height: 25px;
+	margin-right: 10px;
+}
+
+.pseudocheckbox::before {  
+	content: "\00A0";
+	display: inline-block;
+	box-sizing: border-box;
+	min-width: 25px;
+	min-height: 25px;
+	margin-right: 10px;
+	margin-top: -2px;
+	border: none;
+	border-radius: 3px;
+	background: #E2E2E2;
+	vertical-align: baseline;
+	text-align:center;
+	font-size: 25px;
+	line-height: auto;
+	font-weight: bold;
+	color: black;
+}
+
+input[type=checkbox]:checked + .pseudocheckbox::before { content: "\2713"; }
+
+.label {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
+.pseudocheckbox-text {
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: -3px;
+}
+
+.form-a {
+	color: blue;
+}

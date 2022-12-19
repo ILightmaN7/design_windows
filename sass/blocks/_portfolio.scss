@@ -1,0 +1,29 @@
+
+// портфолио
+
+.portfolio {
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	margin-top: 87px;
+}
+
+.portfolio-block {
+	&__img {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 101px 70px 101px;
+	}
+}
+
+@media screen and (max-width:992px) {
+	.portfolio-block__img {
+		padding: 0 50px 70px 50px;
+	}
+	.portfolio-block__img a:last-child {
+		display: none;
+	}
+
+	
+}
+
+

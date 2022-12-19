@@ -1,0 +1,97 @@
+
+// наши услуги
+
+.title-section {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28px;
+	padding: 48px 0;
+	color: #2F2F51;
+}
+
+.services-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content : space-between;
+	border-radius: 3px;
+
+	@media screen and (max-width:992px) {
+	justify-content: center;
+	}
+}
+
+.cardservice__element {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+
+	&-img {
+		margin-left: 50px;
+		margin-top: 50px;
+	}
+
+	&-title {
+		font-size: 24px;
+		line-height: 28px;
+		width: 255px;
+		font-weight: 700;
+		display: inline-block;
+		margin-left: 25px;
+		margin-top: 50px;
+		color: #2F2F51;
+	}
+}
+
+.card__description {
+	width: 302px;
+	font-size: 16px;
+	line-height: 19px;
+	margin-left: 50px;
+	display: inline-block;
+	color: #2F2F51;
+	line-height:18.75px;
+}
+
+.service-one {
+	width: 595px;
+	height: 268px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	background:url(../images/background1.png);
+
+	@media screen and (max-width:992px) {
+		margin-bottom: 30px;
+	}
+}
+
+.service-two {
+	width: 595px;
+	height: 268px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	background:url(../images/background2.png);
+
+	@media screen and (max-width:992px) {
+		margin-bottom: 30px;
+	}
+}
+
+.service-three {
+	width: 595px;
+	height: 268px;
+	border-radius: 3px;
+	background: url(../images/background3.png);
+
+	@media screen and (max-width:992px) {
+		margin-bottom: 30px;
+	}
+	
+}
+
+.service-four {
+	width: 595px;
+	height: 268px;
+	border-radius: 3px;
+	background: url(../images/background4.png);
+}

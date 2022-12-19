@@ -1,0 +1,36 @@
+
+// подвал
+
+.background__footer {
+	background-color: #2F2F51;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+
+	&__company {
+		font-size: 14px;
+		font-weight: 400;
+		color: #ffffff;
+	}
+
+	&__company-img {
+		margin-right: 22px;
+		margin-top: 52px;
+		margin-bottom: 55px;
+	}
+
+	&__info {
+		margin:auto 0;
+	}
+
+	&__info-link {
+		font-size: 14px;
+		font-weight: 400;
+		color: #ffffff;
+		padding-right: 20px;
+	}
+}
+
+
